@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20200912 08:21:51.707" rpa="false">
+<suite id="s1" name="Login" source="C:\Users\durga deepika\PycharmProjects\pythonProject\testcases\login.robot">
+<test id="s1-t1" name="Login to application">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://eficensit-test-8b2e9.web.app/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200912 08:21:52.003" level="INFO">Opening browser 'chrome' to base url 'https://eficensit-test-8b2e9.web.app/'.</msg>
+<status status="PASS" starttime="20200912 08:21:52.003" endtime="20200912 08:22:01.172"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200912 08:22:04.186" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200912 08:22:01.176" endtime="20200912 08:22:04.186"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="email"]</arg>
+<arg>farookhs@flairtechno.com</arg>
+</arguments>
+<msg timestamp="20200912 08:22:04.186" level="INFO">Typing text 'farookhs@flairtechno.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20200912 08:22:04.186" endtime="20200912 08:22:04.362"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200912 08:22:07.363" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200912 08:22:04.362" endtime="20200912 08:22:07.363"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="password"]</arg>
+<arg>Sasi@123</arg>
+</arguments>
+<msg timestamp="20200912 08:22:07.363" level="INFO">Typing text 'Sasi@123' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20200912 08:22:07.363" endtime="20200912 08:22:07.474"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200912 08:22:10.479" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200912 08:22:07.474" endtime="20200912 08:22:10.479"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="root"]/div/div/div/main/div[2]/div/form/button/span[1]</arg>
+</arguments>
+<msg timestamp="20200912 08:22:10.479" level="INFO">Clicking element '//*[@id="root"]/div/div/div/main/div[2]/div/form/button/span[1]'.</msg>
+<status status="PASS" starttime="20200912 08:22:10.479" endtime="20200912 08:22:10.532"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200912 08:22:15.534" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200912 08:22:10.532" endtime="20200912 08:22:15.534"></status>
+</kw>
+<kw name="Wait untill Page Contains">
+<arguments>
+<arg>BUTTON</arg>
+</arguments>
+<msg timestamp="20200912 08:22:15.538" level="FAIL">No keyword with name 'Wait untill Page Contains' found. Did you mean:
+    Selenium2Library.Wait Until Page Contains</msg>
+<status status="FAIL" starttime="20200912 08:22:15.538" endtime="20200912 08:22:15.538"></status>
+</kw>
+<status status="FAIL" starttime="20200912 08:21:52.003" endtime="20200912 08:22:15.538" critical="yes">No keyword with name 'Wait untill Page Contains' found. Did you mean:
+    Selenium2Library.Wait Until Page Contains</status>
+</test>
+<status status="FAIL" starttime="20200912 08:21:51.707" endtime="20200912 08:22:15.542"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
